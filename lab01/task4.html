@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рецепт сирників</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: white;
+    }
+
+    .recipe-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .recipe-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 30px auto;
+      display: inline-block;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    .ingredients-list li {
+      margin-bottom: 5px;
+    }
+
+    .strike {
+      text-decoration: line-through;
+      font-weight: normal;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .footer-text {
+      font-style: italic;
+      font-size: 20px;
+      color: #333;
+      max-width: 90%;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    sup {
+      font-size: 0.6em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="recipe-container">
+  <h1>Рецепт сирників від ТМ Рудь<sup>®</sup></h1>
+
+  <img src="syrnyk.jpg" alt="Сирники" class="recipe-image">
+
+  <h2>Інгредієнти:</h2>
+
+  <ul class="ingredients-list">
+    <li>Сир 9% - <span class="strike">250 г</span> <span class="underline">350 г</span></li>
+    <li>Яйце куряче - 2 шт.</li>
+    <li>Борошно пшеничне - 6 ст.л.</li>
+    <li>Цукор - 2 ст.л.</li>
+    <li>Олія соняшникова - <span class="strike">3 ст.л.</span> <span class="underline">5 ст.л.</span></li>
+  </ul>
+
+  <p class="footer-text">
+    До сирників можна додати сметану, згущене молоко, йогурт чи любі соуси на смак. Смачного!
+  </p>
+</div>
+
+</body>
+</html>
