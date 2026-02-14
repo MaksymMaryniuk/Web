@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфоліо</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="top">Портфоліо В. Стуса</h1>
+
+<section>
+    <h2>Про Василя Стуса</h2>
+    <p>
+        Василь Стус — видатний український поет, перекладач, публіцист та один із найактивніших діячів українського
+        культурного руху шістдесятників.
+        Його життя було присвячене боротьбі за гідність, свободу слова та збереження української ідентичності в умовах
+        тоталітарного режиму.
+    </p>
+    <p>
+        Його інтереси охоплювали світову літературу (зокрема Гете та Рільке), філософію та невтомну правозахисну
+        діяльність.
+        Стус став символом незламності духу, залишаючись вірним своїм ідеалам до останнього подиху.
+    </p>
+</section>
+
+<section>
+    <h2>Галерея: Моменти та символи</h2>
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <a href="https://uk.wikipedia.org/wiki/Василь_Стус" target="_blank">
+                <img src="photo1.jpg" alt="Портрет Василя Стуса">
+                <p>Портрет поета</p>
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="https://www.ukrlib.com.ua/bio/printit.php?tid=1723" target="_blank">
+                <img src="photo2.jpg" alt="Рукописи Стуса">
+                <p>Творча спадщина (Рукописи)</p>
+            </a>
+        </div>
+
+        <div class="gallery-item">
+            <a href="https://haisyn-municipality.gov.ua/news/192479-87-rokiv-vid-dnia-narodzennia-vasilia-stusa-vsanuvannia-pamiati-velikogo-ukrayincia" target="_blank">
+                <img src="photo3.jpg" alt="Пам'ятник Стусу">
+                <p>Вшанування пам'яті</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="footer-nav">
+    <a href="#top">↑ Повернутися вгору</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            font-size: 22px;
+        }
+
+        .tables-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .centered-table th,
+        .centered-table td {
+            text-align: center;
+        }
+
+
+        .header-title {
+            background-color: cyan;
+            display: inline-block;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            padding: 2px 10px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .table-box {
+            text-align: left;
+        }
+
+        .empty-table {
+            font-family: Arial, sans-serif;
+            border-collapse: separate;
+            border-spacing: 2px;
+            outline: 1px solid black;
+        }
+
+        .empty-table td {
+            border: 1px solid black;
+            min-width: 50px;
+            height: 40px;
+        }
+
+        .chem-table {
+            border: none;
+            width: 100%;
+        }
+
+        .chem-table td, .chem-table th {
+            border: none;
+            border-bottom: 1px solid #ccc; /* Тонка лінія знизу */
+            padding: 10px 5px;
+        }
+
+        .chem-table th {
+            border-bottom: 2px solid black;
+        }
+
+
+        .col-cyan {
+            background-color: cyan;
+        }
+
+        .col-green {
+            background-color: #437c0c;
+        }
+
+        .col-darkred {
+            background-color: darkred;
+        }
+
+        .small-note {
+            font-size: 14px;
+            font-style: italic;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="tables-container">
+    <div class="table-box">
+        <div class="header-title">Таблиця 1</div>
+        <table>
+            <tr>
+                <td colspan="2">комірка 1</td>
+                <td>комірка 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">комірка 4</td>
+                <td>комірка 5</td>
+                <td>комірка 6</td>
+            </tr>
+            <tr>
+                <td>комірка 8</td>
+                <td>комірка 9</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-box">
+        <div class="header-title">Таблиця 2</div>
+        <table>
+            <tr>
+                <td rowspan="3">комірка 1</td>
+                <td>комірка 2</td>
+                <td rowspan="3">комірка 3</td>
+            </tr>
+            <tr>
+                <td>комірка 5</td>
+            </tr>
+            <tr>
+                <td>комірка 8</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-box">
+        <div class="header-title">Таблиця 3</div>
+        <table>
+            <tr>
+            <tr>
+                <td colspan="3">комірка 1</td>
+            </tr>
+            <tr>
+                <td>комірка 4</td>
+                <td rowspan="2">комірка 5</td>
+                <td>комірка 6</td>
+            </tr>
+            <tr>
+                <td>комірка 8</td>
+                <td>комірка 9</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-box">
+        <div class="header-title">Таблиця 4</div>
+        <table>
+            <tr>
+                <td rowspan="3">1111</td>
+                <td colspan="2">22222</td>
+                <td colspan="2">33333</td>
+            </tr>
+            <tr>
+                <td>44444</td>
+                <td rowspan="2" colspan="2">55555</td>
+                <td>66666</td>
+            </tr>
+            <tr>
+                <td>77777</td>
+                <td>88888</td>
+            </tr>
+            <tr>
+                <td colspan="5">99999</td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-box">
+        <div class="header-title">Таблиця 5</div>
+        <table class="centered-table">
+            <tr>
+                <th rowspan="2">номер</th>
+                <th colspan="2">теги</th>
+            </tr>
+            <tr>
+                <th>тег</th>
+                <th>значення</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>p</td>
+                <td rowspan="4" class="underline-text">для тексту</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>i</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>table</td>
+                <td>таблиця</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>tr</td>
+                <td>рядок таблиці</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="table-box">
+        <div class="header-title">Таблиця 6</div>
+        <table class="empty-table">
+            <tr>
+                <td colspan="2" rowspan="3"></td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+                <td colspan="2" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-box">
+        <div class="header-title">Таблиця 7</div>
+        <table class="chem-table">
+            <caption><h2>Хімічні елементи</h2></caption>
+            <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Назва</th>
+                <th>Символ</th>
+                <th>Рік</th>
+                <th>Стаття</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <ins style="color: purple;">Водень</ins>
+                </td>
+                <td>H</td>
+                <td>1766</td>
+                <td>📝</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <ins style="color: purple;">Гелій</ins>
+                </td>
+                <td>He</td>
+                <td>1895</td>
+                <td>📝</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <ins style="color: purple;">Бор</ins>
+                </td>
+                <td>B</td>
+                <td>1808</td>
+                <td>📝</td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 14px; font-style: italic; margin-top: 15px;">
+            <span style="color: red; font-weight: bold;">**</span> В цьому завданні використано теги:
+            table, tr, td, th, caption, h2, br, small, ins
+        </p>
+        <ins style="color: purple">Цей текст також має бути в завданні</ins>
+    </div>
+
+    <div class="table-box">
+        <div class="header-title">Таблиця 8</div>
+        <p>Додайте 4 стовпці і 5 рядків, придумайте власний контент,
+            розфарбуйте кожну колонку своїм кольором. В цьому завданні потрібно використати тег <b>colgroup</b>:</p>
+        <table style="border-collapse: collapse;">
+            <colgroup>
+                <col class="col-cyan">
+                <col class="col-green">
+                <col class="col-darkred">
+                <col class="col-darkred">
+                <col class="col-cyan">
+            </colgroup>
+            <tr>
+                <th>№</th>
+                <th>Назва</th>
+                <th>Код товару</th>
+                <th>Країна походження</th>
+                <th>Ціна, грн.</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Олівець</td>
+                <td>23-123-53</td>
+                <td>Україна</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Лінійка 20см</td>
+                <td>43-643-52</td>
+                <td>Польща</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Зошит</td>
+                <td>96-231-63</td>
+                <td>Китай</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ручка</td>
+                <td>35-673-12</td>
+                <td>Україна</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
