@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Житомирська політехніка</title>
+    <meta charset="UTF-8">
+    <title>Головна</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
 
-  <style>
-    body {
-      font-family: "Times New Roman", serif;
-      background: white;
-    }
+        .main-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
 
-    .box {
-      border: 2px solid black; /* рамка */
-      padding: 20px; /* відступи всередині */
-      max-width: 900px; /* ширина як у прикладі */
-      margin: 40px auto; /* центрування */
-    }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 2px solid darkred;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
 
-    hr {
-      margin: 15px 0;
-    }
-  </style>
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            background-color: darkred;
+            color: white;
+        }
+
+        .footer-info {
+            margin-top: 30px;
+            font-size: 14px;
+            color: grey;
+        }
+    </style>
 </head>
 <body>
-<div class="box">
 
-  <h2>
-    <strong>Державний університет</strong>
-    <em>«Житомирська політехніка»</em>
-  </h2>
+<div class="main-container">
+    <h1>Лабораторна робота №1</h1>
 
-  <p>
-    <b>2 вересня</b> на пленарному засіданні
-    <strong>Верховної Ради України</strong> було ухвалено постанову про те,
-    щоб відсвяткувати на державному рівні сотий ювілей від дня заснування
-    Державного університету
-    <span>«Житомирська політехніка»</span><sup>[1]</sup>.
-  </p>
+    <nav class="nav-links">
+        <a href="task1.html"> Task1 </a>
+        <a href="task2.html"> Task2 </a>
+        <a href="task3.html"> Task3 </a>
+        <a href="task4.html"> Task4 </a>
+    </nav>
 
-
-  <p>
-    У вересні <b>2020</b> року Державний університет
-    <em>«Житомирська політехніка»</em> разом з представниками норвезького уряду
-    підписали угоду про реабілітацію учасників
-    <span><strong>АТО/ООС</strong></span><sup>[2]</sup>.
-  </p>
-
-  <hr>
-
-  <p>
-    <small>
-      <sup>[1]</sup>
-      <i>100-річчя Житомирської політехніки будуть відзначати на державному рівні.
-        ztu.org.ua (укр.). Прочитано 21 вересня 2020.</i>
-    </small>
-  </p>
-
-  <p>
-    <small>
-      <sup>[2]</sup>
-      <i>Житомирська політехніка підписала угоду з Норвегією.
-        ztu.org.ua (укр.). Прочитано 28 вересня 2020.</i>
-
-    </small>
-  </p>
+    <div class="footer-info">
+        <p>Виконав: Маринюк Максим Анатолійович</p>
+        <p>ІПЗ-25-1[2]</p>
+    </div>
 </div>
+
 </body>
 </html>
