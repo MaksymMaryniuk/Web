@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета гостя готелю</title>
+    <style>
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Особисті дані</legend>
+
+        <label for="user_name">Ім’я:</label><br>
+        <input type="text" id="user_name" name="user_name" required placeholder="Ваше ім'я">
+        <br><br>
+
+        <label for="user_email">Email:</label><br>
+        <input type="email" id="user_email" name="user_email" autocomplete="off" placeholder="example@email.com"
+               required>
+        <br><br>
+
+        <label for="booking_ref">Номер бронювання:</label><br>
+        <input type="text" id="booking_ref" name="booking_ref" pattern="[A-Z]{2}[0-9]{4}" placeholder="AA1234" required
+               title="Дві великі літери та 4 цифри">
+        <br><br>
+
+        <label for="country_choice">Країна:</label><br>
+        <input list="countries" id="country_choice" name="country" placeholder="Оберіть або введіть">
+        <datalist id="countries">
+            <option value="Україна">
+            <option value="Польща">
+            <option value="Німеччина">
+            <option value="Італія">
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+        <legend>Проживання</legend>
+
+        <label for="checkin_date">Дата заселення:</label><br>
+        <input type="date" id="checkin_date" name="checkin_date" required>
+        <br><br>
+
+        <label for="nights_count">Кількість ночей:</label><br>
+        <input type="number" id="nights_count" name="nights_count" min="1" max="30" value="1">
+        <br><br>
+
+        <label>Тип номера:</label><br>
+        <input type="radio" id="room_std" name="room_type" value="standard" checked>
+        <label for="room_std">Стандарт</label>
+
+        <input type="radio" id="room_lux" name="room_type" value="luxury">
+        <label for="room_lux">Люкс</label>
+
+        <input type="radio" id="room_apt" name="room_type" value="apartment">
+        <label for="room_apt">Апартаменти</label>
+
+        <br><br>
+
+        <label>Додаткові послуги:</label><br>
+        <input type="checkbox" id="service_br" name="services" value="breakfast" checked>
+        <label for="service_br">Сніданок</label>
+
+        <input type="checkbox" id="service_spa" name="services" value="spa">
+        <label for="service_spa">СПА</label>
+
+        <input type="checkbox" id="service_tr" name="services" value="transfer">
+        <label for="service_tr">Трансфер</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Оцінка перебування</legend>
+
+        <label for="comfort_range">Комфорт номера:</label>
+        <input type="range" id="comfort_range" name="comfort" min="0" max="10" value="5"
+               oninput="rating_out.value=this.value">
+        <output id="rating_out" name="rating">5</output>
+
+        <br><br>
+
+        <label for="inter_color">Колір інтер'єру:</label>
+        <input type="color" id="inter_color" name="fav_color">
+
+        <br><br>
+
+        <label for="quality_range">Якість персоналу:</label><br>
+        <input type="range" id="quality_range" name="staff_quality" min="0" max="100" value="60">
+    </fieldset>
+
+    <fieldset>
+        <legend>Харчування</legend>
+
+        <label for="food_type">Тип харчування:</label>
+        <select id="food_type" name="food_type">
+            <optgroup label="Базове">
+                <option value="br" selected>Сніданок</option>
+                <option value="hb">Напівпансіон</option>
+            </optgroup>
+            <optgroup label="Розширене">
+                <option value="fb">Повний пансіон</option>
+                <option value="ai">Все включено</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <label for="fav_dishes">Улюблені страви:</label><br>
+        <select id="fav_dishes" name="dishes" multiple>
+            <option>Паста</option>
+            <option>Риба</option>
+            <option>Стейк</option>
+            <option>Салати</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Відгук</legend>
+
+        <label for="user_comment">Коментар:</label><br>
+        <textarea id="user_comment" name="comment" placeholder="Ваш відгук..." spellcheck="false"></textarea>
+
+        <br><br>
+
+        <label for="admin_note">Службова примітка:</label>
+        <input type="text" id="admin_note" name="note" value="VIP клієнт" disabled>
+    </fieldset>
+
+    <fieldset>
+        <legend>Завантаження</legend>
+        <label for="photos">Фото з відпочинку:</label>
+        <input type="file" id="photos" name="user_photos" multiple>
+    </fieldset>
+
+    <br>
+
+    <button type="reset">Очистити</button>
+    <button type="submit">Відправити</button>
+
+</form>
+
+</body>
+</html>
