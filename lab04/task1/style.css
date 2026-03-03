@@ -1,0 +1,43 @@
+
+p {
+    color: red;
+    text-align: center;
+}
+
+
+.green-text {
+    color: green;
+}
+
+
+#pink-text {
+    color: hotpink;
+}
+
+
+a {
+    color: red;
+}
+
+
+.menu a {
+    color: magenta;
+}
+
+
+.menu > li > a {
+    color: green;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+ul.last-list {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.last-list a {
+    text-decoration: none;
+}

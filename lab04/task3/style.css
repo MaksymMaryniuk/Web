@@ -1,0 +1,60 @@
+table {
+    border-collapse: collapse;
+    font-family: Arial;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* всі клітинки */
+table > tbody > tr > td,
+table > tbody > tr > th {
+    padding: 15px;
+    border: 1px solid white;
+}
+
+/* перший рядок */
+table > tbody > tr:first-child > th {
+    color: white;
+}
+
+
+table > tbody > tr > td:first-child {
+    color: white;
+    text-align: left;
+}
+
+
+table > tbody > tr > th:nth-child(1) {
+    background: #e7cfcf;
+}
+
+table > tbody > tr > th:nth-child(2) {
+    background: #d9aaaa;
+}
+
+table > tbody > tr > th:nth-child(3) {
+    background: #c98989;
+}
+
+table > tbody > tr > th:nth-child(4) {
+    background: #a84e4e;
+}
+
+table > tbody > tr > th:nth-child(5) {
+    background: #7c2b2b;
+}
+
+/* перша колонка рядків */
+table > tbody > tr:not(:first-child) > td:first-child {
+    background: #c04c45;
+}
+
+/* смугастість */
+table > tbody > tr:nth-child(even):not(:first-child) {
+    background: #e2caca;
+}
+
+table > tbody > tr:nth-child(odd):not(:first-child) {
+    background: #d5b2b2;
+}

@@ -1,0 +1,15 @@
+
+p {
+    font-family: serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p:nth-child(even) {
+    color: green;
+}
+
+
+p:nth-child(odd)::first-letter {
+    color: red;
+}

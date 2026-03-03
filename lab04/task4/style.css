@@ -1,0 +1,5 @@
+li:nth-child(odd):hover {
+    background-color: lightblue;
+    color: white;
+    width: fit-content;
+}

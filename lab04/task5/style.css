@@ -1,0 +1,21 @@
+
+a[target="_blank"]:hover {
+    color: red;
+}
+
+
+a[target="_blank"]:hover::after {
+    content: " open in new window";
+    color: gray;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+
+a {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #330066;
+}
