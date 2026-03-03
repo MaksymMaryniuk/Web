@@ -6,14 +6,14 @@ table {
     text-align: center;
 }
 
-/* всі клітинки */
+
 table > tbody > tr > td,
 table > tbody > tr > th {
     padding: 15px;
     border: 1px solid white;
 }
 
-/* перший рядок */
+
 table > tbody > tr:first-child > th {
     color: white;
 }
@@ -45,12 +45,12 @@ table > tbody > tr > th:nth-child(5) {
     background: #7c2b2b;
 }
 
-/* перша колонка рядків */
+
 table > tbody > tr:not(:first-child) > td:first-child {
     background: #c04c45;
 }
 
-/* смугастість */
+
 table > tbody > tr:nth-child(even):not(:first-child) {
     background: #e2caca;
 }

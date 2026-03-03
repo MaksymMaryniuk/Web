@@ -1,16 +1,13 @@
-/* 2.1 Дочірні селектори */
 
-/* лише перший p після h1 */
 h1 + p {
     font-size: 20px;
 }
 
-/* code всередині абзацу */
 p code {
     color: red;
 }
 
-/* code після абзацу */
+
 p + code {
     color: hotpink;
 }
