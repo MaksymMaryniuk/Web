@@ -31,12 +31,3 @@ ul.menu > li > ul > li {
     font-weight: normal;
     border: none;
 }
-
-ul.menu > li > ul {
-    display: none;
-}
-
-
-ul.menu > li:hover > ul {
-    display: block;
-}
