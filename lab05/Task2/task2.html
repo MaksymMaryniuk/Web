@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<form>
+    <table>
+
+        <tr>
+            <td>Ім'я</td>
+            <td><input type="text" placeholder="Введіть ваше ім'я" required></td>
+        </tr>
+
+        <tr>
+            <td>Електронна пошта</td>
+            <td><input type="email" placeholder="Введіть вашу електронну пошту" required></td>
+        </tr>
+
+        <tr>
+            <td>Пароль</td>
+            <td><input type="password" placeholder="Введіть ваш пароль" required minlength="4"></td>
+        </tr>
+
+        <tr>
+            <td>Вік</td>
+            <td><input type="number" placeholder="Введіть ваш вік" required min="1"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" required> Я погоджуюсь з умовами
+            </td>
+        </tr>
+
+        <tr>
+            <td>Країна</td>
+            <td>
+                <select required>
+                    <option value="">Виберіть країну</option>
+                    <option>Україна</option>
+                    <option>Польща</option>
+                    <option>Німеччина</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Зареєструватися"></td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
