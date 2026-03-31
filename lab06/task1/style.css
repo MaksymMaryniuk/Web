@@ -1,0 +1,38 @@
+body
+{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	background: #ffffff;
+}
+
+div
+{
+	width: 1200px;
+	height: 650px;
+
+	background-image:
+		url("multiple_backgrounds/bg3.png"),
+		url("multiple_backgrounds/bg2.png"),
+		url("multiple_backgrounds/6.png"),
+		url("multiple_backgrounds/1.png"),
+		url("multiple_backgrounds/4.png"),
+		url("multiple_backgrounds/3.png"),
+		url("multiple_backgrounds/2.png"),
+		url("multiple_backgrounds/5.png"),
+		url("multiple_backgrounds/0.png");
+
+	background-repeat: no-repeat;
+
+	background-position:
+		top left,
+		bottom right,
+		170px 20px,
+		0px 300px,
+		840px 250px,
+		690px 180px,
+		930px 170px,
+		330px 100px,
+		center;
+}
