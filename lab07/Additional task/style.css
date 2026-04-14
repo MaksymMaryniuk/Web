@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+
+.aquarium {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    background: linear-gradient(#4fc3f7, #0288d1);
+    border: 4px solid #0d47a1;
+    border-radius: 20px;
+}
+
+
+.fish {
+    position: absolute;
+    width: 110px;
+    top: 50%;
+    left: 0;
+    animation: swim-and-flip 10s linear infinite;
+}
+
+@keyframes swim-and-flip {
+    0% {
+        left: 0;
+        transform: scaleX(1) translateY(0);
+    }
+    20% {
+        transform: scaleX(1) translateY(-20px);
+    }
+    40% {
+        transform: scaleX(1) translateY(20px);
+    }
+
+    45% {
+        left: calc(100% - 110px);
+        transform: scaleX(1) translateY(0);
+    }
+
+
+    50% {
+        left: calc(100% - 110px);
+        transform: scaleX(-1) translateY(0);
+    }
+
+    70% {
+        transform: scaleX(-1) translateY(-20px);
+    }
+    90% {
+        transform: scaleX(-1) translateY(20px);
+    }
+
+    95% {
+        left: 0;
+        transform: scaleX(-1) translateY(0);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(1) translateY(0);
+    }
+}
+
+
+.algae {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    animation: sway 3s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+.algae1 {
+    left: 80px;
+    bottom: -20px;
+}
+
+.algae2 {
+    right: 100px;
+    animation-delay: 1.2s;
+    bottom: -20px;
+}
+
+
+@keyframes sway {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}

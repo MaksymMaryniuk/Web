@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Капля PNG</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eef;
+        }
+
+
+        .tap {
+            position: relative;
+            width: 200px;
+            height: 300px;
+        }
+
+
+        .tap img.tap-img {
+            width: 150px;
+        }
+
+
+        .drop {
+            position: absolute;
+            top: 140px;
+            left: 13%;
+            transform: translateX(-50%);
+            width: 20px;
+
+            animation: drip 2s infinite ease-in;
+        }
+
+
+        @keyframes drip {
+            0% {
+                transform: translate(-50%, 0);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            70% {
+                transform: translate(-50%, 150px);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, 200px);
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="tap">
+    <img src="sink.png" class="tap-img">
+    <img src="water.png" class="drop">
+</div>
+
+</body>
+</html>

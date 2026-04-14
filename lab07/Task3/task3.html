@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Фрукти швидкість</title>
+
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #eee;
+    }
+
+    .box {
+      position: relative;
+      width: 500px;
+      height: 300px;
+    }
+
+    .box img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+    .class1 {
+      transition: transform 2s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    .class2 {
+      transition: transform 1.5s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    .class3 {
+      transition: transform 1s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    .class4 {
+      transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    .class5 {
+      transition: transform 0.25s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+
+    .box:hover .class1 {
+      transform: translate(-250px, -40px);
+    }
+
+    .box:hover .class2 {
+      transform: translate(-120px, -90px);
+    }
+
+    .box:hover .class3 {
+      transform: translate(0px, -130px);
+    }
+
+    .box:hover .class4 {
+      transform: translate(120px, -90px);
+    }
+
+    .box:hover .class5 {
+      transform: translate(240px, -40px);
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="box">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="class1" width="80">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616409.png" class="class2" width="80">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616410.png" class="class3" width="80">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616411.png" class="class4" width="80">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616412.png" class="class5" width="80">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.stage {
+    position: relative;
+    width: 600px; height: 200px;
+    margin: 50px auto;
+    display: grid; place-items: center;
+    perspective: 1000px; border: none;
+    overflow: visible; font: bold 24px Arial;
+
+    .curtain {
+        position: absolute; top: 0; width: 50%; height: 100%;
+        background: #40E0D0; border: 1px solid #333;
+        transition: .6s; z-index: 1;
+
+        &.left { left: 0; transform-origin: left; }
+        &.right { right: 0; transform-origin: right; }
+    }
+
+    &:hover {
+        .left { transform: rotateY(60deg); }
+        .right { transform: rotateY(-60deg); }
+    }
+}
