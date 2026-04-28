@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Menus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+
+        .nav-bar {
+            display: flex;
+            background-color: #5b8bd5;
+            border: 1px solid #2b57a7;
+            min-height: 50px;
+            align-items: stretch;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-item {
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            white-space: nowrap;
+            border: 0.5px solid rgba(255, 255, 255, 0.2);
+        }
+
+
+        .nav-item.active {
+            background-color: white;
+            color: #5b8bd5;
+        }
+
+
+        .menu-a {
+            justify-content: space-between;
+        }
+
+
+        .menu-b {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+
+        .menu-c {
+            justify-content: center;
+        }
+
+        .menu-d {
+            justify-content: center;
+            align-items: stretch;
+        }
+
+
+        .menu-e {
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+
+        .menu-f {
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .menu-f .nav-item {
+            margin-left: -1px;
+        }
+
+        .menu-g {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu-g .nav-item {
+            margin-left: -1px;
+        }
+
+        .menu-h {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+            height: auto;
+        }
+
+        .menu-h .nav-item {
+            border: none;
+            padding: 10px 20px;
+        }
+
+
+        .menu-i {
+            flex-direction: column;
+            width: 300px;
+            height: auto;
+        }
+
+        .menu-i .nav-item {
+            justify-content: flex-start;
+            padding: 12px 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>a)</h3>
+    <nav class="nav-bar menu-a">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item active">Information</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>b)</h3>
+    <nav class="nav-bar menu-b">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item active">Information</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>c)</h3>
+    <nav class="nav-bar menu-c">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item">Information</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>d)</h3>
+    <nav class="nav-bar menu-d">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item active">About <br> company</a>
+        <a href="#" class="nav-item">Information <br> on how to <br> get to us</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>e)</h3>
+    <nav class="nav-bar menu-e">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item active">About <br> company</a>
+        <a href="#" class="nav-item">Information <br> on how to <br> get to us</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>f)</h3>
+    <nav class="nav-bar menu-f">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">About <br> company</a>
+        <a href="#" class="nav-item">Information <br> on how to <br> get to us</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+
+<div class="container">
+    <strong>g)</strong>
+    <nav class="nav-bar menu-g">
+        <a href="#" class="nav-item active" style="height: 30px;">About us</a>
+        <a href="#" class="nav-item" style="height: 80px;">Information<br>on how to<br>get to us</a>
+        <a href="#" class="nav-item" style="height: 50px;">About<br>company</a>
+        <a href="#" class="nav-item" style="height: 30px;">Home</a>
+    </nav>
+</div>
+
+<div class="container">
+    <strong>h)</strong>
+    <nav class="nav-bar menu-h">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item active">Information on how to get to us</a>
+        <a href="#" class="nav-item">About us</a>
+        <a href="#" class="nav-item">Products</a>
+        <a href="#" class="nav-item">Our successes</a>
+        <a href="#" class="nav-item">Our employees</a>
+        <a href="#" class="nav-item">Our salaries</a>
+    </nav>
+</div>
+
+<div class="container">
+    <strong>i)</strong>
+    <nav class="nav-bar menu-i">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item">Information on how to get to us</a>
+        <a href="#" class="nav-item active">About us</a>
+        <a href="#" class="nav-item">Products</a>
+        <a href="#" class="nav-item">Our successes</a>
+        <a href="#" class="nav-item">Our employees</a>
+        <a href="#" class="nav-item">Our salaries</a>
+    </nav>
+</div>
+
+
+</body>
+</html>
