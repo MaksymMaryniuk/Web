@@ -1,0 +1,28 @@
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #63c0df;
+
+  th, td {
+    border: 1px solid #004a99;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  td {
+    a {
+      color: #ff4500;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

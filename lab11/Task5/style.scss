@@ -1,0 +1,23 @@
+$widths: 576px,768px,992px,1200px,1400px;
+$container-widths: 540px,720px,960px,1140px,1320px;
+$class-suffixes: -sm,-md,-lg,-xl,-xxl;
+
+.container { width: 100%; }
+
+@for $i from 1 through 12 {
+  .col-#{$i} { width: (100%/12)*$i; }
+}
+
+@for $j from 1 through length($widths) {
+  @media screen and (min-width: nth($widths,$j)) {
+
+    .container { width: nth($container-widths,$j); }
+
+    @for $i from 1 through 12 {
+      .col#{nth($class-suffixes,$j)}-#{$i} {
+        width: (100%/12)*$i;
+      }
+    }
+
+  }
+}

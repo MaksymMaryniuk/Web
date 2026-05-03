@@ -1,0 +1,12 @@
+$colors: (success: (#48a548, #a0d6a0, #5cb85c), info: (#2badd4, #9cd9eb, #5bc0de), warning: (#dd8913, #f5c684, #f0ad4e), danger: (#c32f2a, #e79290, #d9534f));
+
+.alert {
+  padding: 15px; margin: 10px 0; border: 1px solid; border-radius: 4px; font-family: sans-serif;
+  @each $state, $list in $colors {
+    &-#{$state} {
+      color: nth($list, 1);
+      background-color: nth($list, 2);
+      border-color: nth($list, 3);
+    }
+  }
+}

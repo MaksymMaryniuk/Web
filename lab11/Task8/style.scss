@@ -1,0 +1,29 @@
+// Створюємо міксин string-concat
+@mixin string-concat($tag-name) {
+  &::after {
+    content: "This is the end of " + $tag-name;
+    display: block;
+    font-style: italic;
+    color: gray;
+    margin-top: 5px;
+  }
+}
+
+div {
+  @include string-concat("div");
+  padding: 10px;
+  border: 1px solid green;
+}
+
+section {
+  @include string-concat("section");
+  padding: 10px;
+  border: 1px solid red;
+  margin: 10px 0;
+}
+
+p {
+  @include string-concat("p");
+  padding: 10px;
+  border: 1px solid blue;
+}

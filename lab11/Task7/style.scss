@@ -1,0 +1,27 @@
+@mixin box($w, $h, $bg, $p: 0) {
+  width: $w;
+  height: $h;
+  background-color: $bg;
+  padding: $p;
+  box-sizing: border-box;
+}
+
+.container {
+  @include box(600px, 300px, #3d78a8, 20px);
+
+  .level-1 {
+    @include box(100%, 100%, #5fb35f, 20px);
+
+    .level-2 {
+      @include box(100%, 100%, #5aa9c0, 20px);
+
+      .level-3 {
+        @include box(80%, 80%, #e6a64c, 20px);
+
+        .level-4 {
+          @include box(70%, 70%, #d9534f);
+        }
+      }
+    }
+  }
+}

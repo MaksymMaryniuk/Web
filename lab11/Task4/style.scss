@@ -1,0 +1,9 @@
+
+$classes: "primary", "info", "success", "warning", "danger";
+$colors: #337ab7, #5cb85c, #5bc0de, #f0ad4e, #d9534f;
+
+@for $i from 1 through length($classes) {
+  .#{nth($classes, $i)} {
+    background-color: nth($colors, $i);
+  }
+}
